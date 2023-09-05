@@ -10,6 +10,6 @@ module "s3_buckets" {
 module "lambda_function" {
     source              = "./lambda"
     function_name       = "lambda_parser_test"
-    handler             = "lambda.py"  
-    source_code_filename = "lambda.py"     
+    handler             = "lambda.handler"  
+    source_code_filename = "./lambda/lambda.py"     
 }
