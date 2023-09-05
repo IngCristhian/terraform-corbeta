@@ -7,3 +7,6 @@ module "s3_buckets" {
     bucket_names = ["logs-original-test", "logs-parseados-test"]  
 }
 
+module "aws_lambda_function" {
+    source = "./lambda"
+}
