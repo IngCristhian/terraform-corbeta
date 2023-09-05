@@ -25,7 +25,7 @@ resource "aws_lambda_function" "lambda" {
     filename      = "${path.module}/python/lambda.zip"
     function_name = var.function_name
     role          = aws_iam_role.lambda_role.arn
-    handler       = var.handler
+    handler       = "lambda.lambda_handler"
     runtime       = "python3.8"  
     # Se carga el código del archivo.py
     # source_code_hash = filebase64sha256(var.source_code_filename)

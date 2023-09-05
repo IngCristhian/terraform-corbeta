@@ -3,12 +3,12 @@ variable "function_name" {
     type        = string
 }
 
-variable "handler" {
-    description = "Manejador de la función Lambda"
-    type        = string
-}
+# variable "handler" {
+#     description = "Manejador de la función Lambda"
+#     type        = string
+# }
 
-variable "source_code_filename" {
-    description = "lambda.py"
-    type        = string
-}
+# variable "source_code_filename" {
+#     description = "lambda.py"
+#     type        = string
+# }
