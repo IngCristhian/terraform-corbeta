@@ -18,10 +18,11 @@ resource "aws_lambda_function" "lambda" {
     handler       = var.handler
     role          = aws_iam_role.lambda_role.arn
     runtime       = "python3.8"
-    filename      = var.source_code_filename
-
     source_code_hash = filebase64sha256(var.source_code_filename)
+
 }
+
+
 
 resource "aws_iam_role" "lambda_role" {
     name = "lambda_execution_role"
