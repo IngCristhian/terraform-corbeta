@@ -7,9 +7,3 @@ module "s3_buckets" {
     bucket_names = ["logs-original-test", "logs-parseados-test"]  
 }
 
-module "lambda_function" {
-    source              = "./lambda"
-    function_name       = "lambda_parser_test"
-    handler             = "lambda.handler"  
-}
-
