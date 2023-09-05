@@ -9,4 +9,5 @@ module "s3_buckets" {
 
 module "aws_lambda_function" {
     source = "./lambda"
+    function_name = "lambda_corbeta_test"
 }

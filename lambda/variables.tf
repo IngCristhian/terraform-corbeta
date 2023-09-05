@@ -1,7 +1,7 @@
-variable "function_name" {
-    description = "lambda_corbeta_test" 
-    type        = string
-}
+# variable "function_name" {
+#     description = "lambda_corbeta_test" 
+#     type        = string
+# }
 
 # variable "handler" {
 #     description = "Manejador de la función Lambda"
